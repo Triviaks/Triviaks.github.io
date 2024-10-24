@@ -1,14 +1,96 @@
-h1 {
-    color: red;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
-.btn {
-    background-color: aqua;
+
+.body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 147px;
+}
+
+.page-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 147px;
+    background-color:white;
+    backdrop-filter: blur(20px);
+}
+
+.page-header__container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width:1414px;
+    width: 100%;
+}
+/* Навигация в шапке */
+.page-header__nav-link{
+    text-decoration: none; 
+    font-size: 18px;
+    line-height: 1.3;
+    color: black;
+    transition: color 0.2s;
+}
+.page-header__nav-link:hover,
+.page-header__nav-link:active{
+    color: indianred;
+}
+
+/* Кнопка Войти */ 
+.page-header__btn:hover,
+.page-header__btn:active{
+    color:rgb(221, 121, 204);
+    background-color: black;
+    transition: color 0.2s;
+}
+.page-header__right-block{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center ;
+    width: 202px;
+
+}
+.page-header__btn{
     color: black;
 }
-.btn--red{
-    background-color: red;
-    color: black;
+.btn{
+    display: inline-flex;
+    box-sizing: border-box;
+    padding: 15px 40px;
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 0;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+    
 }
-h2{
-    color: green
+
+
+
+.main{
+    flex: 1 0 auto;
+    background-color:rgb(151, 13, 185);
+}
+
+.page-footer {
+    flex: 0 0 auto;
+    background-color: rgb(221, 121, 204);
+}
+.page-header__logo{
+
+}
+.page-header__logo-icon{
+
 }
