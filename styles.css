@@ -86,11 +86,4 @@ body {
 
 .page-footer {
     flex: 0 0 auto;
-    background-color: rgb(221, 121, 204);
-}
-.page-header__logo{
-
-}
-.page-header__logo-icon{
-
-}
+    background-color: rgb(221, 121, 204);}
