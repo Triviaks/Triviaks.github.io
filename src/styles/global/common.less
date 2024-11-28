@@ -10,3 +10,18 @@ textarea{
 textarea{
     resize: none;
 }
+
+inpurt,
+textarea{
+    &::placeholder{
+        color: @grey;
+
+    }
+}
+
+input:focus,
+textarea:focus{
+    &::placeholder{
+        color: transparent;
+    }
+}
