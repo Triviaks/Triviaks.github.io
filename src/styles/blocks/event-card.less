@@ -1,0 +1,65 @@
+.event-card{
+    display: flex;
+    width: 405px;
+    max-width: 100%;
+    min-width: 280px;
+
+    &_link{
+    
+    display: flex;
+    flex-direction: column ;
+    text-decoration: none;
+    width: 100%;
+    color: #1f1e1e; 
+    &:hover.event-card_title{
+        color: #bc3224;
+        text-decoration-color: #bc3224 ;
+    }
+}
+
+    &_picture{
+        display: block;
+        margin: 0 0 25px;
+        position: relative;
+        width: 100%;
+        font-size: 0;
+    }
+
+    &_picture::after{
+        content: "";
+        display: block;
+        width: 100%;
+        padding-top: 107.16%;
+
+    }
+
+    &_img{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &_title{
+        margin: 0 0 15px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.3;
+        min-height: 66px;
+        color: #1f1e1e;
+        text-decoration: underline transparent;
+        transition: color 0.2s text-decoration 0.2s;
+    }
+
+    &_text{
+        margin: 0 0 auto ;
+        font-size: 16px;
+        font-weight: 400;   
+        line-height: 1.3;
+    }
+
+    &_time{
+        margin-top: 15px;
+        display: block;
+    }
+}

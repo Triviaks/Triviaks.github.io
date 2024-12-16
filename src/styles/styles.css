@@ -1,8 +1,9 @@
 html,
-body {
+.body {
     margin: 0;
     padding: 0;
     width: 100%;
+    color: red;
 }
 
 .body {
@@ -14,7 +15,7 @@ body {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-    
+    color: red;
 }
 
 .page-header{
@@ -74,7 +75,7 @@ body {
 /* Кнопка Войти */ 
 .page-header__btn:hover,
 .page-header__btn:active{
-    color:rgb(221, 121, 204);
+    color:red;
     background-color: black;
     transition: color 0.2s;
 }
@@ -128,9 +129,7 @@ body {
     max-width:1414px;
     width: 100%;
 }
-.section-title{
-    
-}
+
 
 .event-card{
     display: flex;
