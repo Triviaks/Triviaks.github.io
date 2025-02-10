@@ -1,0 +1,28 @@
+.check{
+    box-sizing: border-box;
+    position: relative;
+    padding-left: 24px;
+    display: inline-flex;
+    align-items: flex-start;
+    min-height: 24px;
+    padding-top: 2px;
+    color: black;
+    cursor: pointer;
+
+    &__input{
+        .is-hidden;
+        &:checked{
+            background-color: black;
+        }
+    }   
+    &__mark{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 24px;
+        height: 24px;
+        background-color: transparent;
+        border: 1px solid @black;
+        transition: background-color 0.2s;
+    }
+}
